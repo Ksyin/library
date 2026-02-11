@@ -1,0 +1,82 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#F3F4F6;
+}
+
+.top-bar{
+background:linear-gradient(90deg,#1E3A8A,#DC2626);
+color:white;
+padding:30px;
+text-align:center;
+}
+
+.logos{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-bottom:15px;
+}
+
+.logos img{
+height:60px;
+background:white;
+padding:5px;
+border-radius:8px;
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:20px;
+background:white;
+flex-wrap:wrap;
+}
+
+input, select{
+padding:12px;
+border-radius:8px;
+border:2px solid #1E3A8A;
+min-width:250px;
+}
+
+.stats{
+text-align:center;
+padding:15px;
+font-weight:bold;
+color:#1E3A8A;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+padding:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
+transition:0.3s;
+border-top:6px solid #1E3A8A;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-top:6px solid #DC2626;
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.available{color:green;font-weight:bold;}
+.unavailable{color:#DC2626;font-weight:bold;}

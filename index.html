@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Corner Digital Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+<div class="logos">
+<img src="assets/american_corner.png">
+<img src="assets/knls.png">
+<img src="assets/us_embassy.jpg">
+</div>
+<h1>American Corner Digital Library</h1>
+<p>Search • Locate • Pick From Shelf</p>
+</header>
+
+<section class="controls">
+<input type="text" id="search" placeholder="Search all books...">
+<select id="filter">
+<option value="all">All Books</option>
+<option value="available">Available Now</option>
+<option value="unavailable">Checked Out</option>
+</select>
+</section>
+
+<section id="stats" class="stats"></section>
+<section id="books" class="grid"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
